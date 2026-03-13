@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Terms and Conditions | Xilver Games</title>
+  <meta name="description" content="Terms and Conditions for Xilver Games and JUDO – Survival." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Xilver Games home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Xilver Games</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Site">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/judo-survival.html">JUDO – Survival</a>
+        <a class="nav-link" href="/privacy-policy.html">Privacy Policy</a>
+        <a class="nav-link is-active" href="/terms.html">Terms</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="container">
+      <h1 class="page-title">Terms and Conditions</h1>
+      <p class="page-lead">Please read these terms carefully before using Xilver Games products and services.</p>
+
+      <div class="card content">
+        <h2>Acceptance of Terms</h2>
+        <p>By accessing or using our games and services, you agree to be bound by these Terms and Conditions.</p>
+
+        <div class="divider"></div>
+
+        <h2>User Accounts</h2>
+        <p>If an account system is provided, you are responsible for maintaining the confidentiality of your account and for all activities under your account.</p>
+
+        <div class="divider"></div>
+
+        <h2>Fair Gameplay</h2>
+        <p>Players must not exploit bugs or cheats.</p>
+
+        <div class="divider"></div>
+
+        <h2>Virtual Currency</h2>
+        <p>In-game coins have no real world monetary value.</p>
+
+        <div class="divider"></div>
+
+        <h2>Service Changes</h2>
+        <p>Game systems may change as updates are released.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/index.html">Home</a>
+        <a href="/judo-survival.html">JUDO – Survival</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="footer-copy">© <span id="year"></span> Xilver Games. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        nav.classList.toggle('is-open');
+      });
+    })();
+  </script>
+</body>
+</html>

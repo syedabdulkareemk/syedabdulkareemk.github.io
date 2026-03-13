@@ -4,280 +4,145 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Xilver Studios | Strategic Survival Games</title>
+  <title>Xilver Games</title>
 
   <!-- SEO -->
-  <meta name="description" content="Xilver Studios is an independent game studio creating high-stakes strategy games. Creators of JUDO – Survival." />
-  <meta name="keywords" content="Xilver Studios, Indie Game Studio, Strategy Games, Android Games, JUDO Survival" />
-  <meta name="author" content="Xilver Studios" />
+  <meta name="description" content="Xilver Games is an independent game studio focused on building strategic and competitive mobile games." />
+  <meta name="keywords" content="Xilver Games, Indie Game Studio, Strategic Mobile Games, Competitive Mobile Games, JUDO – Survival" />
+  <meta name="author" content="Xilver Games" />
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg-dark: #05090d;
-      --bg-card: rgba(255,255,255,0.05);
-      --accent: #00f5ff;
-      --accent-soft: #7cffcb;
-      --text-main: #ffffff;
-      --text-muted: rgba(255,255,255,0.75);
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: radial-gradient(circle at top, #0f2027, var(--bg-dark));
-      color: var(--text-main);
-      line-height: 1.6;
-    }
-
-    /* ---------- LAYOUT ---------- */
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 24px;
-    }
-
-    .card {
-      background: var(--bg-card);
-      backdrop-filter: blur(14px);
-      border-radius: 18px;
-      padding: 40px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-    }
-
-    h1, h2, h3 {
-      font-weight: 700;
-    }
-
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: var(--accent-soft);
-    }
-
-    p {
-      color: var(--text-muted);
-      max-width: 800px;
-    }
-
-    .accent {
-      color: var(--accent);
-      font-weight: 600;
-    }
-
-    /* ---------- HERO ---------- */
-    header {
-      text-align: center;
-      padding: 140px 24px 100px;
-    }
-
-    header h1 {
-      font-size: clamp(3rem, 6vw, 4.5rem);
-      background: linear-gradient(90deg, var(--accent), var(--accent-soft));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    header p {
-      margin-top: 18px;
-      font-size: 1.25rem;
-      opacity: 0.9;
-    }
-
-    .hero-buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 14px 32px;
-      border-radius: 999px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.25s ease;
-    }
-
-    .btn-primary {
-      background: linear-gradient(90deg, var(--accent), var(--accent-soft));
-      color: #000;
-    }
-
-    .btn-secondary {
-      border: 1px solid var(--accent);
-      color: var(--accent);
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-
-    /* ---------- GRID ---------- */
-    .grid {
-      display: grid;
-      gap: 30px;
-    }
-
-    .grid-2 {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    }
-
-    /* ---------- GAME MEDIA ---------- */
-    .media img, .media iframe {
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-    }
-
-    /* ---------- FOOTER ---------- */
-    footer {
-      text-align: center;
-      padding: 60px 20px;
-      opacity: 0.6;
-      font-size: 0.95rem;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
 
-<!-- HERO -->
-<header>
-  <h1>Xilver Studios</h1>
-  <p>Designing High-Stakes Strategy Games Where Every Move Is Permanent</p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="hero-buttons">
-    <a href="#judo" class="btn btn-primary">View JUDO – Survival</a>
-    <a href="#contact" class="btn btn-secondary">Contact Studio</a>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Xilver Games home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Xilver Games</span>
+      </a>
 
-<!-- PHILOSOPHY -->
-<section>
-  <div class="card">
-    <h2>Studio Philosophy</h2>
-    <p>
-      At <span class="accent">Xilver Studios</span>, we design games around
-      <span class="accent">irreversible decisions</span>.
-      No resets. No safety nets.
-      <br><br>
-      Our goal is to create strategic experiences where mastery, foresight,
-      and adaptability matter more than luck.
-    </p>
-  </div>
-</section>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
 
-<!-- GAME -->
-<section id="judo">
-  <div class="card">
-    <h2>JUDO – Survival</h2>
-    <p>
-      A competitive survival strategy board game built on permanent elimination,
-      dynamic death tiles, shrinking zones, and last-player-standing victory.
-    </p>
-
-    <br>
-
-    <div class="grid grid-3">
-      <p>✔ Permanent Token Elimination</p>
-      <p>✔ Dynamic Death Tiles</p>
-      <p>✔ Shrinking Playable Zones</p>
-      <p>✔ Multiple Competitive Modes</p>
-      <p>✔ Skill-Driven Outcomes</p>
+      <nav id="site-nav" class="site-nav" aria-label="Site">
+        <a class="nav-link is-active" href="/index.html">Home</a>
+        <a class="nav-link" href="/judo-survival.html">JUDO – Survival</a>
+        <a class="nav-link" href="/privacy-policy.html">Privacy Policy</a>
+        <a class="nav-link" href="/terms.html">Terms</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <br><br>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Indie Studio</p>
+          <h1 class="hero-title">Xilver Games</h1>
+          <p class="hero-subtitle">Strategic Mobile Games Built for Competitive Players</p>
+          <p class="hero-description">
+            Xilver Games is an independent game studio focused on building strategic and competitive mobile games. Our goal is to create gameplay systems that reward planning, tactical awareness, and long-term mastery.
+          </p>
 
-    <div class="grid grid-2 media">
-      <img loading="lazy"
-        src="https://images.unsplash.com/photo-1550745165-9bc0b252726f"
-        alt="JUDO Survival Game Preview">
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/judo-survival.html">Explore JUDO – Survival</a>
+            <a class="btn btn-secondary" href="/privacy-policy.html">Privacy Policy</a>
+          </div>
+        </div>
 
-      <iframe loading="lazy"
-        aria-label="JUDO Survival gameplay video"
-        src="https://www.youtube.com/embed/VIDEO_ID"
-        allowfullscreen>
-      </iframe>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="hero-panel-inner">
+            <div class="stat">
+              <div class="stat-k">Strategy</div>
+              <div class="stat-v">Decisions Matter</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Competition</div>
+              <div class="stat-v">Fair Systems</div>
+            </div>
+            <div class="stat">
+              <div class="stat-k">Mastery</div>
+              <div class="stat-v">Long-Term Depth</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Our Mission</h2>
+        </div>
+        <div class="card">
+          <p>
+            At Xilver Games, our mission is to create mobile games that challenge players intellectually and reward strategic thinking. Instead of relying on repetitive mechanics or pure randomness, our games are designed around meaningful decisions and competitive gameplay.
+          </p>
+          <div class="divider"></div>
+          <div class="grid grid-2">
+            <div class="pill">Strategic Gameplay</div>
+            <div class="pill">Fair Competitive Systems</div>
+            <div class="pill">Replayability</div>
+            <div class="pill">Innovative Game Design</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Developer</h2>
+        </div>
+        <div class="card">
+          <p>
+            Syed Abdul Kareem K is an independent game developer and the founder of Xilver Games. His focus is designing strategic game systems that combine classic board game ideas with modern competitive mechanics.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/index.html">Home</a>
+        <a href="/judo-survival.html">JUDO – Survival</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="footer-copy">© <span id="year"></span> Xilver Games. All rights reserved.</div>
     </div>
+  </footer>
 
-    <br>
+  <script>
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = String(new Date().getFullYear());
 
-    <p><span class="accent">Status:</span> In Active Development | Android</p>
-  </div>
-</section>
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
 
-<!-- MODES -->
-<section>
-  <div class="card">
-    <h2>Game Modes</h2>
-
-    <div class="grid grid-2">
-      <p><span class="accent">Classic Survival</span> — Last color standing wins.</p>
-      <p><span class="accent">Revival Mode</span> — Earn revives through eliminations.</p>
-      <p><span class="accent">Alliance Mode</span> — 2v2 survival with shared fate.</p>
-      <p><span class="accent">Legends Mode</span> — High-risk legendary tokens.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section>
-  <div class="card">
-    <h2>Recognition</h2>
-    <p>
-      🏆 <span class="accent">Google AdMob Challenge 2025 — Champions</span><br><br>
-      Awarded for excellence in mobile monetization strategy and
-      production-ready game execution.
-    </p>
-  </div>
-</section>
-
-<!-- FOUNDER -->
-<section>
-  <div class="card">
-    <h2>Founder</h2>
-    <p>
-      <span class="accent">Syed Abdul Kareem K</span><br>
-      Founder & Game Designer
-      <br><br>
-      Focused on building competitive strategy games that reward thinking,
-      planning, and long-term mastery.
-    </p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="card">
-    <h2>Contact</h2>
-    <p>
-      Business & publishing inquiries:<br>
-      <span class="accent">syedabdulkareem042007 [at] gmail [dot] com</span>
-    </p>
-  </div>
-</section>
-
-<footer>
-  © <span id="year"></span> Xilver Studios — India
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        nav.classList.toggle('is-open');
+      });
+    })();
+  </script>
 
 </body>
 </html>
