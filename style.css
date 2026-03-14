@@ -15,22 +15,51 @@
   --container: 1120px;
 }
 
+section,
+.container,
+.content,
+.policy-container,
+main,
+article {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+section::before,
+section::after,
+.container::before,
+.container::after,
+.overlay,
+.hero::before,
+.hero::after,
+.gradient,
+.glow {
+  display: none !important;
+}
+
+.policy-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100%;
+  margin: 0;
+  min-height: 100%;
 }
 
 body {
-  margin: 0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--text);
-  min-height: 100vh;
-  background: linear-gradient(180deg, #0b0f19 0%, #061b2a 28%, #06241f 58%, #0b0f19 100%);
+  background: linear-gradient(180deg, #0b0f19 0%, #102a43 50%, #0b0f19 100%);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #e6edf3;
   line-height: 1.55;
 }
 
@@ -68,7 +97,6 @@ a:hover {
   top: 0;
   z-index: 50;
   background: rgba(5, 9, 13, 0.62);
-  backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -159,6 +187,7 @@ a:hover {
 
 .hero {
   padding: 72px 0 28px;
+  background: transparent;
 }
 
 .hero-inner {
@@ -239,12 +268,8 @@ a:hover {
 
 .hero-panel {
   border-radius: var(--radius-lg);
-  background:
-    radial-gradient(120% 100% at 20% 10%, rgba(0, 245, 255, 0.14), transparent 55%),
-    radial-gradient(120% 100% at 80% 20%, rgba(124, 255, 203, 0.14), transparent 55%),
-    rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
@@ -298,8 +323,6 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: var(--radius);
   padding: 26px;
-  backdrop-filter: blur(14px);
-  box-shadow: var(--shadow);
 }
 
 .card p {
@@ -417,7 +440,6 @@ a:hover {
     padding: 14px 16px;
     background: rgba(5, 9, 13, 0.92);
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(14px);
   }
 
   .site-nav.is-open {
