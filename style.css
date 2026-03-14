@@ -29,9 +29,10 @@ body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
   background:
-    radial-gradient(900px 500px at 15% 12%, rgba(0, 245, 255, 0.16), transparent 55%),
-    radial-gradient(900px 520px at 90% 18%, rgba(124, 255, 203, 0.14), transparent 55%),
-    radial-gradient(600px 420px at 40% 90%, rgba(0, 245, 255, 0.10), transparent 60%),
+    radial-gradient(1100px 720px at 10% 10%, rgba(0, 245, 255, 0.18), transparent 58%),
+    radial-gradient(980px 680px at 92% 16%, rgba(124, 255, 203, 0.16), transparent 56%),
+    radial-gradient(840px 600px at 56% 92%, rgba(84, 108, 255, 0.14), transparent 58%),
+    linear-gradient(180deg, rgba(0, 245, 255, 0.08) 0%, rgba(124, 255, 203, 0.05) 35%, rgba(84, 108, 255, 0.06) 70%, rgba(5, 9, 13, 1) 100%),
     var(--bg);
   line-height: 1.55;
 }
@@ -277,6 +278,24 @@ a:hover {
 
 .section {
   padding: 44px 0;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 245, 255, 0.06), rgba(124, 255, 203, 0.05));
+  opacity: 0.22;
+  mask-image: radial-gradient(70% 120% at 50% 40%, rgba(0,0,0,1), transparent 68%);
+}
+
+.section:nth-of-type(2n)::before {
+  background: linear-gradient(90deg, rgba(124, 255, 203, 0.06), rgba(84, 108, 255, 0.05));
 }
 
 .section-head {
