@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Delete Account Request | JUDO – Survival | Xilver Studios</title>
+  <meta name="description" content="Request deletion of your JUDO – Survival account and associated data for Xilver Studios." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="Xilver Studios home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Xilver Studios</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Site">
+        <a class="nav-link" href="/index.html">Home</a>
+        <a class="nav-link" href="/judo-survival.html">JUDO – Survival</a>
+        <a class="nav-link" href="/privacy-policy.html">Privacy Policy</a>
+        <a class="nav-link" href="/terms.html">Terms</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="container">
+      <h1 class="page-title">Delete Account Request</h1>
+      <p class="page-lead">JUDO – Survival (Xilver Studios)</p>
+
+      <div class="card content">
+        <p><strong>Purpose:</strong> This page explains how to request deletion of your JUDO – Survival account and associated data.</p>
+
+        <div class="divider"></div>
+
+        <h2>How to Request Account Deletion</h2>
+        <p>To request deletion, email us at:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:syedabdulkareemk@gmail.com">syedabdulkareemk@gmail.com</a></li>
+          <li><strong>Subject line:</strong> “JUDO – Survival — Delete My Account”</li>
+        </ul>
+
+        <p style="margin-top: 12px;">In your email, please include the following so we can verify and locate your account:</p>
+        <ul>
+          <li>Your in-game username / display name</li>
+          <li>Your User ID (if visible in the app settings/profile)</li>
+          <li>The sign-in method used (for example: Google / email / guest)</li>
+          <li>Any additional details that help identify your account (optional)</li>
+        </ul>
+
+        <p style="margin-top: 12px;">We will respond within a reasonable timeframe and may ask for additional details to prevent unauthorized deletion requests.</p>
+
+        <div class="divider"></div>
+
+        <h2>What Data Will Be Deleted</h2>
+        <p>When we process an approved deletion request, we will delete (or de-identify where applicable) data associated with your account, such as:</p>
+        <ul>
+          <li>Account identifiers (User ID)</li>
+          <li>Username / display name</li>
+          <li>Profile avatar selection</li>
+          <li>Gameplay progress (where linked to your account)</li>
+          <li>Match history and gameplay statistics (where linked to your account)</li>
+          <li>Rankings/leaderboard entries (where linked to your account)</li>
+          <li>In-game currency balances (where linked to your account)</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>What Data May Be Retained</h2>
+        <p>Some data may be retained for a limited period or in an aggregated/anonymized form for the following reasons:</p>
+        <ul>
+          <li><strong>Security and fraud prevention:</strong> to detect abuse, cheating, and protect users.</li>
+          <li><strong>Legal compliance:</strong> if we are required to keep certain records.</li>
+          <li><strong>Analytics and crash reports:</strong> may be stored by third-party services in aggregated or device-based form.</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>Retention Period</h2>
+        <p>We aim to complete account deletion requests within a reasonable timeframe. If any data must be retained for legal, security, or operational reasons, it will be kept only as long as necessary and then deleted or anonymized.</p>
+
+        <div class="divider"></div>
+
+        <h2>Third-Party Services</h2>
+        <p>The Application may use third-party services (for example: Google Play Services, Firebase Analytics/Crashlytics, AdMob, and potentially Unity Ads). These providers may retain certain data under their own privacy policies.</p>
+
+        <div class="divider"></div>
+
+        <h2>Need Help?</h2>
+        <p>If you have questions about this process, contact us at <a href="mailto:syedabdulkareemk@gmail.com">syedabdulkareemk@gmail.com</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="/index.html">Home</a>
+        <a href="/judo-survival.html">JUDO – Survival</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="footer-copy">© <span id="year"></span> Xilver Studios. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var year = document.getElementById('year');
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener('click', function () {
+        var expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        nav.classList.toggle('is-open');
+      });
+    })();
+  </script>
+</body>
+</html>
